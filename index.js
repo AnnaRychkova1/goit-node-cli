@@ -27,17 +27,17 @@ async function invokeAction({ action, id, name, email, phone }) {
 
     case "get":
       const contactById = await getContactById(id);
-      console.table(contactById);
+      console.log(contactById);
       break;
 
     case "add":
       const addedContact = await addContact(name, email, phone);
-      console.table(addedContact);
+      console.log(addedContact);
       break;
 
     case "remove":
       const removedContact = await removeContact(id);
-      console.table(removedContact);
+      console.log(removedContact);
       break;
 
     default:
