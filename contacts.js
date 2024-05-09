@@ -44,6 +44,4 @@ async function addContact(name, email, phone) {
   return newContact;
 }
 
-listContacts();
-
 export { listContacts, getContactById, removeContact, addContact };
